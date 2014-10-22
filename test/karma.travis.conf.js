@@ -44,7 +44,9 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: [],
+    browsers: [
+      'Firefox'
+    ],
 
     // Which plugins to enable
     plugins: [
