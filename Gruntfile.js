@@ -354,6 +354,14 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'test/karma.conf.js',
         singleRun: true
+      },
+      // DJM: adding a new travis ci karma configuration
+      // that it should override those in the existing
+      // karma.conf.js
+      travis: {
+        configFile: 'test/karma.travis.conf.js',
+        singleRun: true,
+        browsers: ['PhantomJS']
       }
     }
   });
@@ -384,7 +392,8 @@ module.exports = function (grunt) {
     'concurrent:test',
     'autoprefixer',
     'connect:test',
-    'karma'
+    'karma',
+    'karma:travis'
   ]);
 
   grunt.registerTask('build', [
