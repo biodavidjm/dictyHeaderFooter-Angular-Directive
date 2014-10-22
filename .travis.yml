@@ -10,3 +10,5 @@ before_script:
   - npm install -g bower
   - npm install -g phantomjs
   - bower install
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
