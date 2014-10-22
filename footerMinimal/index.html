@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" ng-app="dictyFooterApp">
+<head>
+  <meta charset="utf-8">
+  <title>dicty-Angular: the footer</title>
+  <meta name="description" content="David AngularJS testing platform">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Angular link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- The set of Angular Modules, Controllers and Directives -->
+  <script type="text/javascript" src="scripts/appDicty.module.js"></script>
+  <script type="text/javascript" src="scripts/controllers/dicty.footer.controller.js"></script>
+  <script type="text/javascript" src="scripts/directives/dictyFooter.directive.js"></script>
+  <script type="text/javascript" src="scripts/directives/dictyTesting.directive.js"></script>
+
+  <!-- Use the RESTful functionality provided by Angular in the ngResource module, which is distributed separately from the core Angular framework. Not in use right now.
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  -->
+</head>
+
+<body ng-controller="dictyFooterCtrl">
+  <h1>Angular dictyBase: the Footer</h1>
+  <em>Testing page for a new dynamic version of the footer</em>
+  <hr>
+  <div class="main">
+      <h3 class="visible-lg"> You are using the <strong>LARGEST</strong> screen size (we know it)! </h3>
+      <h5 class="visible-lg"> Large devices (<strong class="cimp">large desktops</strong>, 1200px and up) </h5>
+      <h3 class="visible-md cmedium"> Welcome to <strong>MEDIUM</strong> screen size (we know it)! </h3>
+      <h5 class="visible-md"> Medium devices (<strong class="cimp">desktops</strong>, 992px and up) </h5>
+      <h3 class="visible-sm csmall"> Switch to <strong>SMALL</strong> size (we know it)! </h3>
+      <h5 class="visible-sm"> Small devices (<strong class="cimp">tablets</strong>, 768px and up) </h5>
+      <h5 class="visible-sm"> The footer does not work perfectly in this screen size.<br/> The "Stock Center" does not follow the flow as expected. Do not panic, it will ;-)</h5>
+      <h3 class="visible-xs cextra"> <strong>EXTRA SMALL</strong> size (we know it)!</h3>
+      <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>
+  </div>
+  <hr>
+  
+  <!-- Simple test to check that Angular is working -->
+  <h4> Quick Angular tests</h4
+  <p>1) 4 + 3 = {{4+3}}</p>
+  <p>2) Second test: </p>
+
+    <first-directive> </first-directive>
+  
+  <hr>
+
+  <div class="theDirective">
+    <h3>Test: Angular DIRECTIVE of the FOOTER</h3>
+    <em>{{title}}</em>
+  </div>
+
+    <dicty-footer></dicty-footer>
+  
+  <br/>
+
+  <div class="theDirective"> ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ </div>
+
+  <hr>
+
+  <h3> Test: Footer dynamically generated with Angular <em>controller</em></h3>
+  <!-- FOOTER -->
+  <!-- ANGULAR -->
+  <footer class="gradient_footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 col-xs-12">
+                      <div class="col-md-2 col-sm-4 col-xs-6" ng-repeat="menu in sections.menus">
+                          <span class="footmenus"> {{menu.main}} </span>
+                          <dt ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}" class="footLinks"> {{submenu}}</a></dt>
+                      </div>
+                  </div>
+  <!-- ANGULAR ENDS -->
+
+                  <div class="col-md-2">
+                    <div class="row">
+                          <dt class="footMenuSupport"> Please CITE: </dt>
+                          <dt class= "listMenus"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23172289" class="footLinks">dictyBase</a></dt>
+                          <dt class= "listMenus"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23494302" class="footLinks">Dicty Stock Center</a></dt>
+                      </div>
+                      <div class="row">
+                          <dt class="footMenuSupport"> Supported by </dt>
+                          <dt class= "listMenus"><a href="#" class="footLinks"> NIH </a></dt>
+                          <dt class= "listMenus"><a href="#" class="footLinks"> GMOD </a></dt>
+                          <dt class= "listMenus"><a href="#" class="footLinks"> Gene Ontology </a></dt>
+                      </div>
+                  </div>
+
+              </div> <!-- Row of main menus -->
+
+          </div> <!-- <div class="container"> -->
+              
+      <!-- </div> <div class="footer"> -->
+  </footer>
+
+  <br/><br/><br/>
+
+  <h4> Testing the scope </h4>
+    <ul> 
+      <li ng-repeat="menu in sections.menus">
+        <h4>{{menu.main}}</h4>
+          <dt ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}"> {{submenu}} </a></dt>
+      </li>
+    </ul>
+
+  <p>Total number of sections: {{sections.menus.length}}</p>
+
+</body>
+</html>
