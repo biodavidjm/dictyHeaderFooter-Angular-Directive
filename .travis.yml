@@ -12,4 +12,4 @@ before_script:
   - wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
   - tar -xf phantomjs-1.9.7-linux-x86_64.tar.bz2
   - sudo rm -rf phantomjs-1.9.7-linux-x86_64.tar.bz2
-  - sudo mv phantomjs-1.9.7-linux-x86_64 /usr/local/phantomjs
+  - sudo mv phantomjs-1.9.7-linux-x86_64 /usr/local/PhantomJS
