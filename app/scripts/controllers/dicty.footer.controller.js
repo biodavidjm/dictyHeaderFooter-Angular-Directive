@@ -5,6 +5,13 @@
   
  */
 
+/**
+ * @ngdoc controller
+ * @name dicty.footer.controller.js
+ * @description
+ * # The controller of the footer
+ */
+
 (function () {
     'use strict';
 
