@@ -3,7 +3,7 @@
 describe('Service: dictyhf.factory', function () {
 
   // load the service's module
-  beforeEach(module('dictyFooterApp'));
+  beforeEach(module('dictyHeaderFooterApp'));
 
   // instantiate service
   var dictyhfFactory;

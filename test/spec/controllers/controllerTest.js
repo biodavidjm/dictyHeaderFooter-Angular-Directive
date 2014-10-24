@@ -9,7 +9,7 @@ describe('First clean test', function() {
 
 describe('Testing the controller: dictyFooterCtrl', function() {
   // Load the main module
-  beforeEach(module('dictyFooterApp'));
+  beforeEach(module('dictyHeaderFooterApp'));
 
   var controllerService, scope, httpMock;
   // Let's inject the $controller and the $rootScope services
@@ -42,7 +42,7 @@ describe ('Footer Controller, simple test', function() {
   var controller, scope;
 
   // The setup that needs to be defined for each test
-  beforeEach(module('dictyFooterApp'));
+  beforeEach(module('dictyHeaderFooterApp'));
 
   beforeEach(inject(function($controller, $rootScope) {
        scope = $rootScope.$new();

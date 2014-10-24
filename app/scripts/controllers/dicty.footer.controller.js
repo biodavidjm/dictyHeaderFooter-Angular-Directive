@@ -1,11 +1,4 @@
 /**
- dicty.footer.controller.js
- ----------------
-  dictyFooterCtrl: the controller of the footer
-  
- */
-
-/**
  * @ngdoc controller
  * @name dicty.footer.controller.js
  * @description

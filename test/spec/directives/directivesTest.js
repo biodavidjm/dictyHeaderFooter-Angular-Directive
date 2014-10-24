@@ -3,7 +3,7 @@
 describe('Directive: dictyFooter', function () {
 
   // load the directive's module
-  beforeEach(module('dictyFooterApp'));
+  beforeEach(module('dictyHeaderFooterApp'));
 
   var element,scope;
 
