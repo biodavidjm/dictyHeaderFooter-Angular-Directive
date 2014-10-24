@@ -8,9 +8,9 @@
  * This factory should provide a service that can be shared
  * for the header and footer.
  */
-angular.module('dictyFooterApp')
+angular.module('dictyHeaderFooterApp')
   .factory('dictyhfFactory', function () {
-    
+
     var meaningOfLife = 42;
 
     return {

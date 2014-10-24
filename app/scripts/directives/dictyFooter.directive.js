@@ -5,7 +5,6 @@
  * # The directive of the footer
  */
 
-
 (function () {
 'use strict';
 
@@ -22,7 +21,7 @@
     }
 
 	angular
-	    .module('dictyFooterApp')
+	    .module('dictyHeaderFooterApp')
 	    .directive('dictyFooter', dictyFooterMatter);
 
 })();

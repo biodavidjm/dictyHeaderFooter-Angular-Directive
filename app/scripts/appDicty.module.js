@@ -7,7 +7,5 @@
 
 (function(){
     'use strict';
-
-    angular.module('dictyFooterApp', []);
-
+    angular.module('dictyHeaderFooterApp', []);
 })();

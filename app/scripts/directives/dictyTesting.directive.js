@@ -9,7 +9,7 @@
 	'use strict';
 
 	angular
-	    .module('dictyFooterApp')
+	    .module('dictyHeaderFooterApp')
 	    .directive('firstDirective', function(){
 	        return{
 	            restrict: 'E',

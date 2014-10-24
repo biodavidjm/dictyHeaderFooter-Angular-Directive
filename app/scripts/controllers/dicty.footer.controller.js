@@ -36,6 +36,6 @@
     }
 
     angular
-        .module('dictyFooterApp')
+        .module('dictyHeaderFooterApp')
         .controller('dictyFooterCtrl', dictyFooterController);
 })();
