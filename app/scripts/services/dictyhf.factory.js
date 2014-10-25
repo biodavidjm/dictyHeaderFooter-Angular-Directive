@@ -10,16 +10,10 @@
  */
 
 angular.module('dictyHeaderFooterApp')
-	.factory('dictyhfFactory', function () {
-		// return {
-		// 	getJasonF8oe
-		// }
-
-  	//Testing the Factory
-    var meaningOfLife = 42;
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
-  });
+	.factory('dictyhfFactory', function ($http) {
+		return {
+			getJasonFile: function() {
+				return $http.get('templates/links.json');
+			}
+		};
+  	});

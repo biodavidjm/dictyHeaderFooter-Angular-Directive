@@ -14,18 +14,28 @@
      * @param  {[type]} $http  The http service. 
      * It gets the data from the json file at the momment.
      */
-    function dictyFooterController($scope, $http, $log) {
+    function dictyFooterController($scope, dictyhfFactory, $http, $log) {
         
         $scope.title = 'Dynamic Footer (this is dynamic itself)';
         $scope.sections = {};
-        
-        $http.get('templates/links.json')
-            .success(function(data) {
+
+        dictyhfFactory.getJasonFile()
+            .success(function(data){
                 $scope.sections.menus = data;
             })
             .error(function() {
-                $log.error('ERROR!!');
-            }); 
+                $log.error('EEERRRRROOOOORRRR!!');
+            });
+
+
+        // When the http service was here:        
+        // $http.get('templates/links.json')
+        //     .success(function(data) {
+        //         $scope.sections.menus = data;
+        //     })
+        //     .error(function() {
+        //         $log.error('ERROR!!');
+        //     }); 
     }
 
     angular
