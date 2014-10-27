@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-xs-12">
-                    <div class="col-md-2 col-sm-4 col-xs-6" ng-repeat="menu in sections.menus">
+                    <div class="col-sm-2 col-xs-6" ng-repeat="menu in sections.menus">
                         <span class="footmenus"> {{menu.main}} </span>
                         <dt ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}" class="footLinks"> {{submenu}}</a></dt>
                     </div>

@@ -14,9 +14,22 @@ body {
 }
 
 footer {
-    border: 2px solid #000066;
-    padding-top: 5px;
-    padding-bottom: 10px;
+        border: 2px solid #000066;
+        padding-top: 5px;
+        padding-bottom: 10px;
+}
+
+
+.gradient_footer {
+    background: linear-gradient(#000099, #0099FF); /* Standard syntax */
+    background: -webkit-linear-gradient(#000099, #0099FF); /*Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000099, #0099FF);  /*Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000099, #0099FF);  /*Firefox 3.6 to 15 */
+
+    /*To test it out*/
+    background: linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;
+    background: -webkit-linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;
+    background: -webkit-linear-gradient(aqua, white);
 }
 
 .theDirective {
@@ -25,19 +38,9 @@ footer {
     text-align: center;
 }
 
-.gradient_footer {
-    background: linear-gradient(#000099, #0099FF); /* Standard syntax */
-    background: -webkit-linear-gradient(#000099, #0099FF); */ /*Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#000099, #0099FF);  /*Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#000099, #0099FF);  /*Firefox 3.6 to 15 */
 
-    /*To test it out
-    /*background: linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;*/
-    /*background: -webkit-linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;*/
-    /*background: -webkit-linear-gradient(aqua, white);*/
-}
 
-.col-md-10 {
+/*.col-md-10 {
     text-align: left;
 }
 .col-md-2 {
@@ -96,21 +99,16 @@ a:visited { color: #D8D8D8; text-decoration: none }
 a:hover { color: white; text-decoration: underline;}
 
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+/* Responsive: define what to do on every screen size */
+@media(min-width:1200px){
+
+}
+@media(min-width:992px){
+
+}
+@media(min-width:768px){
+
+}
+@media(max-width:767px){
+
 }
