@@ -38,6 +38,16 @@ footer {
 
 /*Setting up padding accoring to the size of the screen*/
 
+
+.col-xs-12 {
+    padding-bottom:10px;
+}
+
+.col-sm-4 {
+    padding-bottom: 10px;
+}
+
+
 .footMenus {
     font: 16px helvetica,arial,sans-serif;
     color: #CCFFCC;
