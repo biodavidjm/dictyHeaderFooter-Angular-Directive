@@ -11,3 +11,9 @@ before_script:
   - bower install
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
+
+branches:
+    only:
+        - "develop"
+after_success:
+    cover -report coveralls
