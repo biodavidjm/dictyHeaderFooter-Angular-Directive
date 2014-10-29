@@ -1,6 +1,10 @@
 'use strict';
 
+
+//INCOMPLETE TESTS
+
 describe('mocking service http call', function() {
+
   beforeEach(module('dictyHeaderFooterApp'));
 
   var dictyFooterCtrl, $scope;
@@ -21,13 +25,6 @@ describe('mocking service http call', function() {
         $scope: $scope, dictyhfFactory: dictyhfFactory 
       });
     }));
-    
-    // it('should set data to "things and stuff"', function() {
-    //   expect($scope.data).toEqual({
-    //     things: 'and stuff'
-    //   });
-    // });
-  
   });
 
   describe('with httpBackend', function() {
@@ -40,11 +37,5 @@ describe('mocking service http call', function() {
       dictyFooterCtrl = $controller('dictyFooterCtrl', { $scope: $scope });
       $httpBackend.flush();
     }));
-    
-    // it('should set data to "things and stuff"', function() {
-    //   expect($scope.data).toEqual({
-    //     things: 'and stuff'
-    //   });
-    // });
   });
 });

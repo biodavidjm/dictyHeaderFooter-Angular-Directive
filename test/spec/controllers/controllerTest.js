@@ -1,53 +1,49 @@
 'use strict';
 
 describe('First clean test', function() {
-  it('It contains spec with an expectation', function() {
-    expect(true).toBe(true);
-  });
+  it('It contains spec with an expectation. This is a simple test to check that unit testing works', 
+    function() {
+      expect(true).toBe(true);
+    });
 });
 
 
 describe('Testing the controller: dictyFooterCtrl', function() {
-  // Load the main module
+  
   beforeEach(module('dictyHeaderFooterApp'));
 
   var controllerService, scope, httpMock;
-  // Let's inject the $controller and the $rootScope services
-  beforeEach(inject(function($controller,$rootScope, $httpBackend) {
+  
+  beforeEach(inject(function($controller,$rootScope,$httpBackend) {
     httpMock = $httpBackend;
     scope = $rootScope.$new();
-    // httpMock.when('GET','template/links.json').respond();
     controllerService  = $controller('dictyFooterCtrl', {$scope: scope});
   }));
 
-  // it('should access the title',
-  // function(){
-  //   // var num = 6;
-  //   expect(scope.title).toEqual('Dynamic Footer (this is dynamic itself)');
-  //   // expect(scope.sections.menus).not.toBeNull();
-  // });
+  it('should check that the dynamic sections are not null', function(){
+    expect(scope.sections.menus).not.toBeNull();
+  });
 
-// A different approach
-  it('should get the title', function () {
-    httpMock.expectGET('templates/links.json');
+  it('should access and check the title', function () {
     expect(scope.title).toEqual('Dynamic Footer (this is dynamic itself)');
   });
+
+  it('should mock the http service', function() {
+    httpMock.expectGET('templates/links.json');
+  });
+
 });
 
 
-// Writing it in a different way
 describe ('Footer Controller, simple test', function() {
 
-  //Define the items that will be exposed in beforeEach
-  var controller, scope;
-
-  // The setup that needs to be defined for each test
   beforeEach(module('dictyHeaderFooterApp'));
+  
+  var controller, scope;
 
   beforeEach(inject(function($controller, $rootScope) {
        scope = $rootScope.$new();
-       controller = $controller('dictyFooterCtrl', {
-            $scope: scope
-       });
+       controller = $controller('dictyFooterCtrl', { $scope: scope});
   }));
+  
 });

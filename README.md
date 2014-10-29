@@ -17,12 +17,21 @@ The configuration file `.travis.yml` contains the specifications for [Travis](ht
 ### Coveralls
 [![Coverage Status](https://img.shields.io/coveralls/dictyBase/dictyHeaderFooter-Angular-Directive.svg)](https://coveralls.io/r/dictyBase/dictyHeaderFooter-Angular-Directive)
 
+Coveralls has not been properly configured yet.
+
 # Design principles
 
 The design principles behind the new framework of the dictyBase are described in the [frontpage-dictybase](https://github.com/dictyBase/frontpage-dictybase) repository. The details about the footer and header are described next:
 
 ## Footer
 
-The `footer` html tag contains the dicty footer. A default bootstrap container holds the grid system of 12 columns. Two main columns of 10 and 2 are created.
+The `footer` html tag contains the dicty footer. A default bootstrap container is used, which 1) wrap site contents to a maximum of 1170px and 2) house the grid system. 
 
-- The column of 10 holds the dynamic menus, which is further divided in 
+The content of the footer is divided in two main columns of size 10 and 2 for screen sizes large and medium.
+
+  * Column size 10 holds the dynamic navigation content (menus and submenus)
+  * Column size 2 holds the static section (for now) with the funding sources of the dictybase. 
+
+For extra small screens (xs) the two columns are broken into two rows (one column on top of the other), with the dynamic menus on the top and the funding.
+
+For the dynamic column, which holds all the sections and subsections of the web, it is also subjected to responsive behaviour. Thus for large screen is 6 columns, for medium 3 columns, small 2 columns, and extra small 1 column.

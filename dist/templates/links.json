@@ -9,6 +9,16 @@
         }
     }, 
     {
+        "main": "DictyAccess", 
+        "submain": {
+            "Genome Eye View": "#",
+            "Genomic statistics": "#",
+            "Annotations": "#",
+            "Ontology": "#",
+            "Phylogeny": "#"
+        }
+    }, 
+    {
         "main": "Tools", 
         "submain": {
             "DictyMine": "#",
@@ -20,16 +30,6 @@
             "Textpresso": "#",
             "Biochemical Pathways": "#",
             "Third Party Tools": "#"
-        }
-    }, 
-    {
-        "main": "DictyAccess", 
-        "submain": {
-            "Genome Eye View": "#",
-            "Genomic statistics": "#",
-            "Annotations": "#",
-            "Ontology": "#",
-            "Phylogeny": "#"
         }
     }, 
     {

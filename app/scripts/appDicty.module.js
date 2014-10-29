@@ -1,9 +1,9 @@
 /**
- * appDicty.module.js
- * ----------------
- * The Module component of the dicty footer app
+ * @ngdoc module
+ * @name appDicty.module.js
+ * @description
+ * # The Module component of the dicty footer app
  */
-
 
 (function(){
     'use strict';

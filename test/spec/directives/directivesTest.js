@@ -2,7 +2,6 @@
 
 describe('Directive: dictyFooter', function () {
 
-  // load the directive's module
   beforeEach(module('dictyHeaderFooterApp'));
 
   var element,scope;
@@ -11,7 +10,7 @@ describe('Directive: dictyFooter', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make the element visible', inject(function ($compile) {
+  it('should make the directive visible', inject(function ($compile) {
     element = angular.element('<dicty-footer></dicty-footer>');
     element = $compile(element)(scope);
   }));

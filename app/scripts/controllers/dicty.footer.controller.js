@@ -27,7 +27,6 @@
                 $log.error('EEERRRRROOOOORRRR!!');
             });
 
-
         // When the http service was here:        
         // $http.get('templates/links.json')
         //     .success(function(data) {

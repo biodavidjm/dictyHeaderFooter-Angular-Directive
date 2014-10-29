@@ -37,24 +37,24 @@
   </div>
 
   <div class="theDirective">
+
     <h3>FOOTER</h3>
     <em>{{title}}</em>
+  
   </div>
 
     <dicty-footer></dicty-footer>
 
+  <!-- TESTING ZONE to eventually delete -->
    <!-- Simple test to check that Angular is working -->
-  <h4> Quick Angular tests</h4
+<!--   <h4> Quick Angular tests</h4
   <p>1) 4 + 3 = {{4+3}}</p>
   <p>2) Second test: The number of sections is {{sections.menus.length}} </p>
-
-    <first-directive> </first-directive>
   
-  <hr>
+  <first-directive> </first-directive>
+ -->  
 
-
-  <br/>
-
+<!-- BUILDING ZONE -->
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -77,12 +77,11 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script type="text/javascript" src="scripts/appDicty.module.js"></script>
-  <script type="text/javascript" src="scripts/controllers/dicty.footer.controller.js"></script>
-  <script type="text/javascript" src="scripts/directives/dictyFooter.directive.js"></script>
-  <script type="text/javascript" src="scripts/directives/dictyTesting.directive.js"></script>
-
-        <script src="scripts/services/dictyhf.factory.js"></script>
+    <script type="text/javascript" src="scripts/appDicty.module.js"></script>
+    <script type="text/javascript" src="scripts/controllers/dicty.footer.controller.js"></script>
+    <script type="text/javascript" src="scripts/directives/dictyFooter.directive.js"></script>
+    <script type="text/javascript" src="scripts/directives/dictyTesting.directive.js"></script>
+    <script type="text/javascript" src="scripts/services/dictyhf.factory.js"></script>
         <!-- endbuild -->
 </body>
 </html>
