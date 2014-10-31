@@ -2,8 +2,7 @@
 <html class="no-js" ng-app="dictyHeaderFooterApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <title>dicty-Angular: the footer</title>
+    <title>dicty-Angular: the Header and Footer</title>
     <meta name="description" content="David AngularJS testing platform">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -16,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-<body ng-controller="dictyFooterCtrl">
+<body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -36,14 +35,17 @@
       <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>
   </div>
 
-  <div class="theDirective">
-
-    <h3>FOOTER</h3>
-    <em>{{title}}</em>
-  
+  <div class="theDirective" ng-controller="DictyHeaderControllerCtrl">
+        <h3>HEADER</h3>
+        <em>{{name}}</em>
+        <dicty-header></dicty-header> 
   </div>
 
-    <dicty-footer></dicty-footer>
+  <div class="theDirective" ng-controller="dictyFooterCtrl">
+        <h3>FOOTER</h3>
+        <em>{{title}}</em>
+        <dicty-footer></dicty-footer> 
+  </div>
 
   <!-- TESTING ZONE to eventually delete -->
    <!-- Simple test to check that Angular is working -->
@@ -82,6 +84,8 @@
     <script type="text/javascript" src="scripts/directives/dictyFooter.directive.js"></script>
     <script type="text/javascript" src="scripts/directives/dictyTesting.directive.js"></script>
     <script type="text/javascript" src="scripts/services/dictyhf.factory.js"></script>
+        <script src="scripts/controllers/dicty.header.controller.js"></script>
+        <script src="scripts/directives/dictyheader.directive.js"></script>
         <!-- endbuild -->
 </body>
 </html>

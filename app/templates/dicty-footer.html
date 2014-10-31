@@ -1,6 +1,6 @@
 <!-- dicty-footer.html -->
 <!-- ANGULAR -->
-<footer class="gradient_footer">
+<footer class="footerBackground">
         <div class="container">
             <div class="row">
                 <!-- DYNAMIC ZONE STARTS -->
@@ -9,7 +9,7 @@
                 <div class="col-sm-10 col-xs-12">
                     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" ng-repeat="menu in sections.menus">
                         <div class="footMenus"> {{menu.main}} </div>
-                        <div class="footLinks" ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}"> {{submenu}}</a></div>
+                        <div class="footLinks" ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}">{{submenu}}</a></div>
                     </div>
                 </div>
                 <!-- DYNAMIC PART ENDS -->
