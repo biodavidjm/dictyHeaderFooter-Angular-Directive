@@ -35,7 +35,13 @@ footer {
     background: -webkit-linear-gradient(aqua, white);
 }
 
-.theDirective {
+.theDirectiveHeader {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.theDirectiveFooter {
     background-color: red;
     color: white;
     text-align: center;
