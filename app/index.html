@@ -2,8 +2,7 @@
 <html class="no-js" ng-app="dictyHeaderFooterApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <title>dicty-Angular: the footer</title>
+    <title>dicty-Angular: the Header and Footer</title>
     <meta name="description" content="David AngularJS testing platform">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -16,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-<body ng-controller="dictyFooterCtrl">
+<body ng-controller="dictyHeaderFooterCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -36,14 +35,17 @@
       <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>
   </div>
 
-  <div class="theDirective">
-
-    <h3>FOOTER</h3>
-    <em>{{title}}</em>
-  
+  <div class="theDirectiveHeader">
+        <h3>HEADER</h3>
+        <em>{{header}}</em>
   </div>
+  <dicty-header></dicty-header> 
 
-    <dicty-footer></dicty-footer>
+  <div class="theDirectiveFooter">
+        <h3>FOOTER</h3>
+        <em>{{footer}}</em>
+  </div>
+  <dicty-footer></dicty-footer> 
 
   <!-- TESTING ZONE to eventually delete -->
    <!-- Simple test to check that Angular is working -->
@@ -78,10 +80,11 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script type="text/javascript" src="scripts/appDicty.module.js"></script>
-    <script type="text/javascript" src="scripts/controllers/dicty.footer.controller.js"></script>
+    <script type="text/javascript" src="scripts/controllers/dicty.HeaderFooter.controller.js"></script>
     <script type="text/javascript" src="scripts/directives/dictyFooter.directive.js"></script>
+    <script type="text/javascript" src="scripts/directives/dictyHeader.directive.js"></script>
     <script type="text/javascript" src="scripts/directives/dictyTesting.directive.js"></script>
-    <script type="text/javascript" src="scripts/services/dictyhf.factory.js"></script>
+    <script type="text/javascript" src="scripts/services/dictyhf.factory.js"></script>   
         <!-- endbuild -->
 </body>
 </html>

@@ -14,9 +14,9 @@
      * @param  {[type]} $http  The http service. 
      * It gets the data from the json file at the momment.
      */
-    function dictyFooterController($scope, dictyhfFactory, $http, $log) {
-        
-        $scope.title = 'Dynamic Footer (this is dynamic itself)';
+    function dictyHeaderFooterController($scope, dictyhfFactory, $http, $log) {
+        $scope.footer = 'Dynamic Footer (this is dynamic itself)';
+        $scope.header = 'directive of the Header';
         $scope.sections = {};
 
         dictyhfFactory.getJasonFile()
@@ -39,5 +39,5 @@
 
     angular
         .module('dictyHeaderFooterApp')
-        .controller('dictyFooterCtrl', dictyFooterController);
+        .controller('dictyHeaderFooterCtrl', dictyHeaderFooterController);
 })();

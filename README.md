@@ -27,6 +27,8 @@ The design principles behind the new framework of the dictyBase are described in
 
 The `footer` html tag contains the dicty footer. A default bootstrap container is used, which 1) wrap site contents to a maximum of 1170px and 2) house the grid system. 
 
+![FooterGridDesign](https://github.com/dictyBase/dictyHeaderFooter-Angular-Directive/blob/feature/includeEverythingInDirective/images/Footer_grid.jpg)
+
 The content of the footer is divided in two main columns of size 10 and 2 for screen sizes large and medium.
 
   * Column size 10 holds the dynamic navigation content (menus and submenus)
@@ -35,3 +37,9 @@ The content of the footer is divided in two main columns of size 10 and 2 for sc
 For extra small screens (xs) the two columns are broken into two rows (one column on top of the other), with the dynamic menus on the top and the funding.
 
 For the dynamic column, which holds all the sections and subsections of the web, it is also subjected to responsive behaviour. Thus for large screen is 6 columns, for medium 3 columns, small 2 columns, and extra small 1 column.
+
+## Header
+
+A `header` html tag contains the dicty header. A default bootstrap container is also used.
+
+![Header'GridDesign](https://github.com/dictyBase/dictyHeaderFooter-Angular-Directive/blob/feature/includeEverythingInDirective/images/Header_grid.jpg)

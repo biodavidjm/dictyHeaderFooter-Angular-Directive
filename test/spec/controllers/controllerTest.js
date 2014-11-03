@@ -25,7 +25,7 @@ describe('Testing the controller: dictyFooterCtrl', function() {
   });
 
   it('should access and check the title', function () {
-    expect(scope.title).toEqual('Dynamic Footer (this is dynamic itself)');
+    expect(scope.footer).toEqual('Dynamic Footer (this is dynamic itself)');
   });
 
   it('should mock the http service', function() {

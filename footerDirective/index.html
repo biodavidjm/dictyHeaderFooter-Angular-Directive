@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>dicty-Angular: the footer</title>
+  <meta name="description" content="David AngularJS testing platform">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Angular link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- The Angular Directive -->
+   <script src="appFooter.js"></script>
+
+  <!-- Use the RESTful functionality provided by Angular in the ngResource module, which is distributed separately from the core Angular framework. Not in use right now.
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  -->
+</head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+  <h1>Angular dictyBase</h1>
+  <em>Testing page for the header and footer</em>
+
+  <div>
+      <h3 class="visible-lg"> <strong>LARGEST</strong> screen screen size</h3>
+      <h5 class="visible-lg"> Large devices (<strong class="cimp">large desktops</strong>, 1200px and up) </h5>
+      <h3 class="visible-md cmedium"> <strong>MEDIUM</strong> screen screen size</h3>
+      <h5 class="visible-md"> Medium devices (<strong class="cimp">desktops</strong>, 992px and up) </h5>
+      <h3 class="visible-sm csmall"> <strong>SMALL</strong> screen size</h3>
+      <h5 class="visible-sm"> Small devices (<strong class="cimp">tablets</strong>, 768px and up) </h5>
+      <h3 class="visible-xs cextra"> <strong>EXTRA SMALL</strong> screen size</h3>
+      <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>
+  </div>
+
+  <div class="theDirective">
+    <h3>FOOTER</h3>
+  </div>
+  
+  <div ng-app="dictyFooterApp">
+    <dicty-footer></dicty-footer>
+  </div>
+
+</body>
+</html>
