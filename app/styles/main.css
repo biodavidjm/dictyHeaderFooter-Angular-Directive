@@ -17,12 +17,66 @@ footer {
   padding: 0.2em 0;
 }
 
+/*HEADER*/
 
 .headerBackground {
-    background: #000099;
+    background: #CCFFFF;
     color: white;
 }
 
+.firstHeaderRow {
+    border-style: solid;
+    border-color: grey;
+    background-color: #3399FF;
+    display: flex;
+}
+
+.logoSpace {
+    border-style: solid;
+    border-color: #00CCFF;
+}
+
+.cologoSpace {
+    border-style: solid;
+    border-color: yellow;
+}
+
+.linksSpace {
+    border-style: solid;
+    border-color: green;    
+}
+
+.searchGeneSpace {
+    border-style: solid;
+    border-color: red;    
+}
+
+.searchGuidedSpace {
+    border-style: solid;
+    border-color: red;    
+}
+
+/*NAVIGATION BAR CUSTOMIZED*/
+
+.navbar-custom {
+    background-color:#333399;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#CCFFFF;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color:#CCFFFF;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:white;
+}
+
+
+
+/*FOOTER*/
 .footerBackground {
     background: linear-gradient(#000099, #0099FF); /* Standard syntax */
     background: -webkit-linear-gradient(#000099, #0099FF); /*Safari 5.1 to 6.0 */
@@ -49,8 +103,8 @@ footer {
 
 /*Solving problems of sections with strong differences
 in the number of submenus*/
-
-.col-xs-12 {
+/*
+col-xs-12 {
     padding-bottom: 20px;
 }
 
@@ -65,7 +119,7 @@ in the number of submenus*/
 .col-md-4 {
     padding-bottom: 20px;
 }
-
+*/
 
 .footMenus {
     font: 16px helvetica,arial,sans-serif;
