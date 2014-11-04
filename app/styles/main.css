@@ -20,54 +20,86 @@ footer {
 /*HEADER*/
 
 .headerBackground {
-    background: #CCFFFF;
-    color: white;
+    
 }
 
+
+
 .firstHeaderRow {
-    border-style: solid;
-    border-color: grey;
-    background-color: #3399FF;
-    display: flex;
+    background-color: white;
+    /*border-style: solid;*/
+    /*border-color: grey;*/
+    /*display: flex;*/ /*To keep the size of the 
+    logo box similar to the cologo box. The problem is that
+    they will not behave responsible*/
 }
 
 .logoSpace {
-    border-style: solid;
-    border-color: #00CCFF;
+    /*border-style: solid;
+    border-color: #00CCFF;*/
 }
 
 .cologoSpace {
-    border-style: solid;
-    border-color: yellow;
+/*    border-style: solid;
+    border-color: yellow;*/
+}
+
+.cologoSpace {
+    text-align: right;
 }
 
 .linksSpace {
-    border-style: solid;
-    border-color: green;    
+/*    border-style: solid;
+    border-color: green;*/
 }
 
 .searchGeneSpace {
-    border-style: solid;
-    border-color: red;    
+/*    border-style: solid;
+    border-color: red;  */
+    font-size: 10px;
 }
 
 .searchGuidedSpace {
-    border-style: solid;
-    border-color: red;    
+/*    border-style: solid;
+    border-color: red;    */
+    font-size: 10px;
 }
 
 /*NAVIGATION BAR CUSTOMIZED*/
 
+
+.menuContainer {
+    background-color: #333399;
+}
+
+.navbar-dicty {
+    /*border-radius:10px;*/
+    border-style: none;
+    margin:0px;
+    font-size: 10px;
+}
+
+.textboxclass {
+    height: 22px;
+    width: 80px;
+}
+
+.form-control-dicty {
+    font-size: 10px;
+}
+
 .navbar-custom {
     background-color:#333399;
-    border-radius:0;
+    /*border-radius:10px;*/
+    border-style: none;
+    margin:0px;
 }
 
 .navbar-custom .navbar-nav > li > a {
-    color:#CCFFFF;
+    color:white;
 }
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color:#CCFFFF;
+    color:blue;
     background-color:transparent;
 }
 .navbar-custom .navbar-brand {
@@ -122,21 +154,21 @@ col-xs-12 {
 */
 
 .footMenus {
-    font: 16px helvetica,arial,sans-serif;
+    font: 14px helvetica,arial,sans-serif;
     color: #CCFFCC;
     padding-bottom: 1px;
     padding-top: 10px;
 }
 
 .footMenuSupport {
-    font: 16px arial,sans-serif;
+    font: 14px arial,sans-serif;
     color: yellow;
     padding-top: 25px;
     text-align: center;
 }
 
 .footLinks {
-    font: 12px arial, sans-serif;
+    font: 10px arial, sans-serif;
     color: #D8D8D8;
     padding-top: 8px;
 }
@@ -178,5 +210,32 @@ a:hover { color: white; text-decoration: underline;}
 
 }
 @media(max-width:767px){
+    .linksSpace {
+        text-align: center;
+    }
+    .footLinks {
+        font: 12px arial, sans-serif;
+        color: #D8D8D8;
+        padding-top: 8px;
+    }
+    .footMenus {
+        font: 16px helvetica,arial,sans-serif;
+        color: #CCFFCC;
+        padding-bottom: 1px;
+        padding-top: 30px;
+    }
 
+    .footMenuSupport {
+        font: 16px arial,sans-serif;
+        color: yellow;
+        padding-top: 25px;
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 10px;
+    }
+    .navbar-toggle {
+        float: none;
+        margin-right: 0;
+    }
 }

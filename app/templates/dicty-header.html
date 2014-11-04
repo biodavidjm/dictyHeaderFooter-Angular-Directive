@@ -3,54 +3,86 @@
     <div class="container">
     	<div class="row firstHeaderRow"> <!-- first row: Logo, Search boxes, static links -->
 			<div class="col-sm-2 col-xs-12 logoSpace" > <!-- The logo -->
-				Logo	
+				<img src="images/dictyLogo.png" alt="dictyBase home" width=100>
 			</div>
 
 			<div class="col-sm-10 col-xs-12 cologoSpace"> <!-- Static links, search boxes -->
 				<div class="row linksSpace"> <!-- Static links -->
-					Static links
-				</div>
-				<div class="row"> <!-- Search boxes -->
-					<div class="col-sm-6 col-xs-12 searchGeneSpace"> <!-- Gene search -->
-						Gene search
-					</div>
-					<div class="col-sm-6 col-xs-12 searchGuidedSpace"> <!-- Guided Search -->
-						Guided search
-					</div>
-				</div>
-			</div>
+					<button type="button" class="btn-link btn-sm">
+  						<span class="glyphicon glyphicon-download"></span> Downloads 
+					</button>
+					<button type="button" class="btn-link btn-sm">
+  						<span class="glyphicon glyphicon-info-sign"></span> About us
+					</button>
+					<button type="button" class="btn-link btn-sm">
+  						<span class="glyphicon glyphicon-envelope"></span> Contact
+					</button>
+					<button type="button" class="btn-link btn-sm">
+  						<span class="glyphicon glyphicon-user"></span> Login
+					</button>
+				</div> <!-- Static links -->
+				
+				<!-- SEARCH BOXES -->
+				<div class="row">
+			        <div class="col-md-4 col-sm-6 pull-right">
+			            <form class="navbar-form navbar-dicty" role="search">
+			                <div class="input-group">
+			                    <input type="text" class="form-control form-control-dicty textboxclass" placeholder="Guided Search">
+			                    <div class="input-group-btn">
+			                        <button class="btn btn-default btn-xs" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+			                    </div>
+			                </div>
+			            </form>
+			        </div> <!-- Gene search -->
+			        <div class="col-md-4 col-sm-6 pull-right">
+			            <form class="navbar-form navbar-dicty" role="search">
+			                <div class="input-group">
+			                    <input type="text" class="form-control form-control-dicty textboxclass" placeholder="Gene Search">
+			                    <div class="input-group-btn">
+			                        <button class="btn btn-default btn-xs" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+			                    </div>
+			                </div>
+			            </form>
+
+			        </div>
+
+				</div> <!-- search box ends -->
+			</div> <!-- Column Next to logo -->
     	</div> <!-- first row: Logo, Search boxes, static links -->
-    	
-    	<div class="row"> <!-- Second row: navigation bar -->
-			<nav class="navbar navbar-default navbar-custom" role="navigation">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dictybar">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a class="navbar-brand" href="index.html">dictyBase</a>
-			    </div>
-
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="dictybar">
-			      <ul class="nav navbar-nav">
-			        <li class="dropdown" ng-repeat="menu in sections.menus">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menu.main}} <span class="caret"></span></a>
-			          <ul class="dropdown-menu" role="menu" >
-			            <li ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}">{{submenu}}</a></li>
-			          </ul>
-			        </li>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>	
-    	</div> 
-
-    	
     </div>    <!-- class="container" -->
 </header>
+
+    <!-- NAVIGATION BAR -->
+    <div class="menuContainer" >
+	    <div class="container">
+	    	<div class="row"> <!-- Second row: navigation bar -->
+				<nav class="navbar navbar-default navbar-custom" role="navigation">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dictybar">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <!-- <a class="navbar-brand visible-xs" href="index.html">Menu</a> -->
+				    </div>
+
+				    <!-- nav links -->
+				    <div class="collapse navbar-collapse" id="dictybar">
+				      <ul class="nav navbar-nav">
+				        <li class="dropdown" ng-repeat="menu in sections.menus">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menu.main}} <span class="caret"></span></a>
+				          <ul class="dropdown-menu" role="menu">
+				            <li ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}">{{submenu}}</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>	
+	    	</div> 
+	    </div>
+	</div>
+
