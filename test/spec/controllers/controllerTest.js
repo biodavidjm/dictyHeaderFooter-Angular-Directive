@@ -8,7 +8,7 @@ describe('First clean test', function() {
 });
 
 
-describe('Testing the controller: dictyFooterCtrl', function() {
+describe('Testing the controller: dictyHeaderFooterCtrl', function() {
   
   beforeEach(module('dictyHeaderFooterApp'));
 
@@ -17,7 +17,7 @@ describe('Testing the controller: dictyFooterCtrl', function() {
   beforeEach(inject(function($controller,$rootScope,$httpBackend) {
     httpMock = $httpBackend;
     scope = $rootScope.$new();
-    controllerService  = $controller('dictyFooterCtrl', {$scope: scope});
+    controllerService  = $controller('dictyHeaderFooterCtrl', {$scope: scope});
   }));
 
   it('should check that the dynamic sections are not null', function(){
@@ -43,7 +43,7 @@ describe ('Footer Controller, simple test', function() {
 
   beforeEach(inject(function($controller, $rootScope) {
        scope = $rootScope.$new();
-       controller = $controller('dictyFooterCtrl', { $scope: scope});
+       controller = $controller('dictyHeaderFooterCtrl', { $scope: scope});
   }));
   
 });

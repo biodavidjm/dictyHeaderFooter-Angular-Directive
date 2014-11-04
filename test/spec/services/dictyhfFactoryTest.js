@@ -7,7 +7,7 @@ describe('mocking service http call', function() {
 
   beforeEach(module('dictyHeaderFooterApp'));
 
-  var dictyFooterCtrl, $scope;
+  var dictyHeaderFooterCtrl, $scope;
 
   describe('first with spies', function() {
     beforeEach(inject(function($controller, $rootScope, dictyhfFactory) {
@@ -21,7 +21,7 @@ describe('mocking service http call', function() {
         };  
       });
 
-      dictyFooterCtrl = $controller ('dictyFooterCtrl', { 
+      dictyHeaderFooterCtrl = $controller ('dictyHeaderFooterCtrl', { 
         $scope: $scope, dictyhfFactory: dictyhfFactory 
       });
     }));
@@ -34,7 +34,7 @@ describe('mocking service http call', function() {
       $httpBackend.when('GET','templates/links.json')
         .respond({things: 'and stuff'});
 
-      dictyFooterCtrl = $controller('dictyFooterCtrl', { $scope: $scope });
+      dictyHeaderFooterCtrl = $controller('dictyHeaderFooterCtrl', { $scope: $scope });
       $httpBackend.flush();
     }));
   });
