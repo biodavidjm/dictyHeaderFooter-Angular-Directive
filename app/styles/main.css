@@ -2,6 +2,7 @@
 
 body {
     text-align: center;
+     min-width:320px;
 }
 
 footer {
@@ -18,12 +19,6 @@ footer {
 }
 
 /*HEADER*/
-
-.headerBackground {
-    
-}
-
-
 
 .firstHeaderRow {
     background-color: white;
@@ -53,27 +48,16 @@ footer {
     border-color: green;*/
 }
 
+/*SEARCH BOXES*/
 .searchGeneSpace {
-/*    border-style: solid;
-    border-color: red;  */
     font-size: 10px;
 }
 
 .searchGuidedSpace {
-/*    border-style: solid;
-    border-color: red;    */
     font-size: 10px;
 }
 
-/*NAVIGATION BAR CUSTOMIZED*/
-
-
-.menuContainer {
-    background-color: #333399;
-}
-
-.navbar-dicty {
-    /*border-radius:10px;*/
+.searchNavbarDicty {
     border-style: none;
     margin:0px;
     font-size: 10px;
@@ -85,27 +69,88 @@ footer {
 }
 
 .form-control-dicty {
-    font-size: 10px;
+    font-size: 11px;
 }
 
-.navbar-custom {
+
+/*NAVIGATION BAR CUSTOMIZED*/
+
+.menuContainer {
+    background-color: #333399;
+}
+
+/*CUSTOMIZE DEFAULT PARAMETERS*/
+/* navbar */
+.navbar-default {
     background-color:#333399;
-    /*border-radius:10px;*/
     border-style: none;
     margin:0px;
 }
-
-.navbar-custom .navbar-nav > li > a {
-    color:white;
+/* title */
+.navbar-default .navbar-brand {
+    color: fuchsia;
 }
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color:blue;
-    background-color:transparent;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: pink;
 }
-.navbar-custom .navbar-brand {
-    color:white;
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }
-
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #CCFFCC;
+}
+/* I don't know what is this for */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: yellow;
+    background-color: yellow;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #333399;
+    background-color: white;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: fuchsia;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #CCFFCC;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: orange;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #CCFFCC;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: orange;
+    }
+}
 
 
 /*FOOTER*/
@@ -120,38 +165,6 @@ footer {
     background: -webkit-linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;
     background: -webkit-linear-gradient(aqua, white);
 }
-
-.theDirectiveHeader {
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.theDirectiveFooter {
-    background-color: red;
-    color: white;
-    text-align: center;
-}
-
-/*Solving problems of sections with strong differences
-in the number of submenus*/
-/*
-col-xs-12 {
-    padding-bottom: 20px;
-}
-
-.col-xs-6 {
-    padding-bottom: 40px;
-}
-
-.col-sm-6 {
-    padding-bottom: 10px;
-}
-
-.col-md-4 {
-    padding-bottom: 20px;
-}
-*/
 
 .footMenus {
     font: 14px helvetica,arial,sans-serif;
@@ -171,24 +184,6 @@ col-xs-12 {
     font: 10px arial, sans-serif;
     color: #D8D8D8;
     padding-top: 8px;
-}
-
-
-
-/*TESTING*/
-/*Colors for screen sizes*/
-.cmedium {
-    color:green;
-}
-.csmall {
-    color:orange;
-}
-.cextra {
-    color:red;
-}
-.cimp{
-    /*color:#00CCCC;*/
-    text-shadow: 0px 0px 5px #FFFF66;
 }
 
 
@@ -238,4 +233,33 @@ a:hover { color: white; text-decoration: underline;}
         float: none;
         margin-right: 0;
     }
+}
+
+
+/*TESTING TEXT. TO DELETE EVENTUALLY*/ 
+.theDirectiveHeader {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.theDirectiveFooter {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+/*Colors for screen sizes*/
+.cmedium {
+    color:green;
+}
+.csmall {
+    color:orange;
+}
+.cextra {
+    color:red;
+}
+.cimp{
+    /*color:#00CCCC;*/
+    text-shadow: 0px 0px 5px #FFFF66;
 }
