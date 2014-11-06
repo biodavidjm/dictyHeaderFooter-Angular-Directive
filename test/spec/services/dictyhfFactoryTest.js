@@ -27,7 +27,7 @@ describe('mocking service http call', function() {
     }));
   });
 
-  describe('with httpBackend', function() {
+describe('with httpBackend', function() {
     beforeEach(inject(function($controller, $rootScope, $httpBackend) {
       $scope = $rootScope.$new();
       
