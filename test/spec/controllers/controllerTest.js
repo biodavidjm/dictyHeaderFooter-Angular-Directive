@@ -25,11 +25,11 @@ describe('Testing the controller: dictyHeaderFooterCtrl', function() {
   });
 
   it('should access and check the title', function () {
-    expect(scope.footer).toEqual('Dynamic Footer (this is dynamic itself)');
+    expect(scope.footer).toEqual('Dynamic Footer');
   });
 
   it('should mock the http service', function() {
-    httpMock.expectGET('templates/links.json');
+    httpMock.expectGET('templates/linkjdjdjs.json');
   });
 
 });
@@ -47,3 +47,28 @@ describe ('Footer Controller, simple test', function() {
   }));
   
 });
+
+describe('UnitTesting: main controller', function() {
+  // Load the module with MainController
+  beforeEach(module('dictyHeaderFooterApp'));
+
+  var ctrl, scope;
+  // inject the $controller and $rootScope services
+  beforeEach(inject(function($controller, $rootScope) {
+    // Create a new scope that's a child of the $rootScope
+    scope = $rootScope.$new();
+    // Create the controller
+    ctrl = $controller('dictyHeaderFooterCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should create $scope.footer when calling dictyHeaderFooterController', function() {
+      expect(scope.footer).toBeUndefined();
+      scope.dictyHeaderFooterController();
+      // expect(scope.footer).toEqual('Dynamic Footer');
+  });
+});
+
+
+
