@@ -25,7 +25,7 @@ describe('Testing the controller: dictyHeaderFooterCtrl', function() {
   });
 
   it('should access and check the title', function () {
-    expect(scope.footer).toEqual('Dynamic Footer');
+    expect(scope.footer).toEqual('Angular Dynamic Footer');
   });
 
   it('should mock the http service', function() {
@@ -63,12 +63,43 @@ describe('UnitTesting: main controller', function() {
     });
   }));
 
-  it('should create $scope.footer when calling dictyHeaderFooterController', function() {
-      expect(scope.footer).toBeUndefined();
-      scope.dictyHeaderFooterController();
-      // expect(scope.footer).toEqual('Dynamic Footer');
+  it('should access the scope', function() {
+    expect(scope.footer).toBeDefined();
+    expect(scope.footer).toEqual('Angular Dynamic Footer');
+    expect(scope.header).toEqual('Angular Dynamic Header');
   });
 });
 
+// New attempt. I have to inject the resource:
+describe('Testing the Controller', function(){
+  var scope, ctrl, httpBackend;
+
+  beforeEach(module('dictyHeaderFooterApp'));
+
+  beforeEach(
+    inject(
+      function($controller, $rootScope, dictyhfFactory, $httpBackend) {
+        httpBackend = $httpBackend;
+        scope = $rootScope.$new();
+        ctrl = $controller('dictyHeaderFooterCtrl', {
+          $scope: scope, dictyhfFactory: dictyhfFactory });
+
+        var mockData = { key: 'test' };
+        var url = 'http://search.twitter.com/search.json?' +
+          'callback=JSON_CALLBACK&q=angularjs';
+        httpBackend.whenJSONP(url).respond(mockData);
+      }
+    )
+  );
+
+  it('should set searchResult on successful search', function() {
+    scope.searchTerm = 'angularjs';
+    scope.search();
+    httpBackend.flush();
+
+    expect(scope.searchResult.key).toBe('test');
+  });
+
+});
 
 
