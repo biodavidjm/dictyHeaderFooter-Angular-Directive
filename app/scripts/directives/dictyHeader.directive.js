@@ -13,15 +13,13 @@
 	 * @return {dicty-footer.html template}
 	 */
 
-    function dictyHeaderMatter () {
+    angular
+	    .module('dictyHeaderFooterApp')
+	    .directive('dictyHeader', function () {
             return{
                 restrict:'E',
                 templateUrl:'templates/dicty-header.html'
             };
-    }
-
-	angular
-	    .module('dictyHeaderFooterApp')
-	    .directive('dictyHeader', dictyHeaderMatter);
+    });
 
 })();

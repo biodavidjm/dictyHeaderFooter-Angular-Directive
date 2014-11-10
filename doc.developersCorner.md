@@ -5,5 +5,10 @@ Developers corner
 
 ---
 
+### Resources
+
+#### Books
+* _Web Component Architecture & Development with AngularJS_ by David Shapiro
+
 ### Basic installations
 `node`, `npm`, `grunt`, `bower`, `karma`, `yo`

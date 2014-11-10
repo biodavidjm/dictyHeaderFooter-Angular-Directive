@@ -29,7 +29,7 @@ describe('Testing the controller: dictyHeaderFooterCtrl', function() {
   });
 
   it('should mock the http service', function() {
-    httpMock.expectGET('templates/linkjdjdjs.json');
+    httpMock.expectGET('templates/links.json');
   });
 
 });
@@ -71,6 +71,7 @@ describe('UnitTesting: main controller', function() {
 });
 
 // New attempt. I have to inject the resource:
+// Unfinished 
 describe('Testing the Controller', function(){
   var scope, ctrl, httpBackend;
 
@@ -83,22 +84,9 @@ describe('Testing the Controller', function(){
         scope = $rootScope.$new();
         ctrl = $controller('dictyHeaderFooterCtrl', {
           $scope: scope, dictyhfFactory: dictyhfFactory });
-
-        var mockData = { key: 'test' };
-        var url = 'http://search.twitter.com/search.json?' +
-          'callback=JSON_CALLBACK&q=angularjs';
-        httpBackend.whenJSONP(url).respond(mockData);
       }
     )
   );
-
-  it('should set searchResult on successful search', function() {
-    scope.searchTerm = 'angularjs';
-    scope.search();
-    httpBackend.flush();
-
-    expect(scope.searchResult.key).toBe('test');
-  });
 
 });
 
