@@ -154,28 +154,15 @@ footer {
 
 
 /*FOOTER*/
-.footerBackground {
+
+.footerBackground { 
+/* This CSS code will only show up if JS is enabled */ 
+    background: #000099;
     background: linear-gradient(#000099, #0099FF); /* Standard syntax */
     background: -webkit-linear-gradient(#000099, #0099FF); /*Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#000099, #0099FF);  /*Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#000099, #0099FF);  /*Firefox 3.6 to 15 */
-
-    /*To test it out*/
-    background: linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;
-    background: -webkit-linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;
-    background: -webkit-linear-gradient(aqua, white);
-}
-
-/*Trying this ID instead of the class just to see if it solves the problem, but it doesn't seem to help*/
-#element {
-    background: -moz-linear-gradient(#000099, #0099FF); /* FF 3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */
-    background: -webkit-linear-gradient(#000099, #0099FF); /* Safari 5.1+, Chrome 10+ */
-    background: -o-linear-gradient(#000099, #0099FF); /* Opera 11.10 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff'); /* IE6 & IE7 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff')"; /* IE8+ */
-    background: linear-gradient(#000099, #0099FF); /* the standard */
-}
+} 
 
 .footMenus {
     font: 14px helvetica,arial,sans-serif;
@@ -248,17 +235,6 @@ a:hover { color: white; text-decoration: underline;}
 
 
 /*TESTING TEXT. TO DELETE EVENTUALLY*/ 
-.theDirectiveHeader {
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.theDirectiveFooter {
-    background-color: red;
-    color: white;
-    text-align: center;
-}
 
 /*MAIN BODY*/
 .panelBlack {
