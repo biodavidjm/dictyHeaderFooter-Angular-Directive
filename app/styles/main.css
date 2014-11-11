@@ -2,7 +2,7 @@
 
 body {
     text-align: center;
-     min-width:320px;
+    min-width:320px;
 }
 
 footer {
@@ -76,13 +76,13 @@ footer {
 /*NAVIGATION BAR CUSTOMIZED*/
 
 .menuContainer {
-    background-color: #333399;
+    background-color: #15317E;
 }
 
 /*CUSTOMIZE DEFAULT PARAMETERS*/
 /* navbar */
 .navbar-default {
-    background-color:#333399;
+    background-color: #15317E;
     border-style: none;
     margin:0px;
 }
@@ -97,6 +97,7 @@ footer {
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: white;
+    font-size: 18px;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -123,7 +124,7 @@ footer {
 .navbar-default .navbar-nav > .dropdown > a:hover .caret,
 .navbar-default .navbar-nav > .dropdown > a:focus .caret {
     border-top-color: #CCFFCC;
-    border-bottom-color: #333;
+    border-bottom-color: red;
 }
 .navbar-default .navbar-nav > .open > a .caret, 
 .navbar-default .navbar-nav > .open > a:hover .caret, 
@@ -145,6 +146,8 @@ footer {
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #CCFFCC;
+        text-align: right;
+        font-size: 16px;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -156,7 +159,6 @@ footer {
 /*FOOTER*/
 
 .footerBackground { 
-/* This CSS code will only show up if JS is enabled */ 
     background: #000099;
     background: linear-gradient(#000099, #0099FF); /* Standard syntax */
     background: -webkit-linear-gradient(#000099, #0099FF); /*Safari 5.1 to 6.0 */
@@ -179,7 +181,7 @@ footer {
 }
 
 .footLinks {
-    font: 10px arial, sans-serif;
+    font: 11px arial, sans-serif;
     color: #D8D8D8;
     padding-top: 8px;
 }
@@ -196,10 +198,13 @@ a:hover { color: white; text-decoration: underline;}
 @media(min-width:1200px){
 
 }
-@media(min-width:992px){
-
-}
-@media(min-width:768px){
+@media(max-width:992px){
+    
+    /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 15px;
+    }
 
 }
 @media(max-width:767px){
@@ -224,12 +229,15 @@ a:hover { color: white; text-decoration: underline;}
         padding-top: 25px;
         text-align: center;
     }
-    .navbar-brand {
-        font-size: 10px;
-    }
+
     .navbar-toggle {
         float: none;
         margin-right: 0;
+    }
+    /*FONT SIZE FOR THE NAVIGATION BIGGER LARGER FOR BETTER READ*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 20px;
     }
 }
 
@@ -237,6 +245,10 @@ a:hover { color: white; text-decoration: underline;}
 /*TESTING TEXT. TO DELETE EVENTUALLY*/ 
 
 /*MAIN BODY*/
+.theCenter {
+    border: 10px;
+    border: 10px solid black;
+}
 .panelBlack {
     height: 300px;
     background-color: #0041C2;
