@@ -30,25 +30,30 @@ footer {
 }
 
 .logoSpace {
-    /*border-style: solid;
+/*    border-style: solid;
     border-color: #00CCFF;*/
+    vertical-align: bottom;
 }
 
 .cologoSpace {
 /*    border-style: solid;
-    border-color: yellow;*/
-}
-
-.cologoSpace {
+    border-color: red;*/
     text-align: right;
+    height: 93;
 }
 
 .linksSpace {
 /*    border-style: solid;
     border-color: green;*/
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 /*SEARCH BOXES*/
+.searchBoxSpace {
+/*    border-style: solid;
+    border-color: green;    */
+}
 .searchGeneSpace {
     font-size: 10px;
 }
@@ -208,6 +213,11 @@ a:hover { color: white; text-decoration: underline;}
 
 }
 @media(max-width:767px){
+
+    .logoSpace {
+        padding-top: 10px;
+        /*Same space from the top on mobile devices*/
+    }
     .linksSpace {
         text-align: center;
     }
