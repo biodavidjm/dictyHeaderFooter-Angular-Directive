@@ -90,7 +90,7 @@ footer {
     background-color: #15317E;
     border-style: none;
     margin:0px;
-}
+}   
 /* title */
 .navbar-default .navbar-brand {
     color: fuchsia;
@@ -137,6 +137,21 @@ footer {
     border-top-color: #555;
     border-bottom-color: #555;
 }
+
+/*DROPDOWN MENU*/
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #000099;
+}
+
+
 /* mobile version */
 .navbar-default .navbar-toggle {
     border-color: white;
@@ -157,6 +172,11 @@ footer {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: orange;
+    }
+    /*FONT SIZE FOR THE NAVIGATION BIGGER LARGER FOR BETTER READ*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 20px;
     }
 }
 
@@ -208,7 +228,8 @@ a:hover { color: white; text-decoration: underline;}
     /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
     .navbar-default .navbar-nav > li > a {
         color: white;
-        font-size: 15px;
+        font-size: 18px;
+        padding-right: 2px;
     }
 
 }
@@ -243,11 +264,6 @@ a:hover { color: white; text-decoration: underline;}
     .navbar-toggle {
         float: none;
         margin-right: 0;
-    }
-    /*FONT SIZE FOR THE NAVIGATION BIGGER LARGER FOR BETTER READ*/
-    .navbar-default .navbar-nav > li > a {
-        color: white;
-        font-size: 20px;
     }
 }
 
