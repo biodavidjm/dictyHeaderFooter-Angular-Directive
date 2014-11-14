@@ -1,46 +1,26 @@
 /* app css stylesheet */
 
 .dictyHeader {
-    min-width:320px;
+    min-width: 320px;
     text-align: center;
     padding-bottom: 10px;
 }
 
 .dictyHeader > .container {
-    max-width: 850px;
+    max-width: 1000px;
 }
 
 .dictyHeader > .menuContainer > .container {
-    max-width: 850px;
-}
-.dictyFooter {
-    border: 2px solid #000066;
-    padding-bottom: 20px;
-    min-width:320px;
-    background: #000099;
-    background: linear-gradient(#000099, #0099FF); /* Standard syntax */
-    background: -webkit-linear-gradient(#000099, #0099FF); /*Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#000099, #0099FF);  /*Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#000099, #0099FF);  /*Firefox 3.6 to 15 */
+    max-width: 1000px;
+    padding-left: 0px;
 }
 
-/*Warning style for an outdated browser*/
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/*HEADER*/
+/*HEADER details*/
 
 .firstHeaderRow {
     background-color: white;
     /*border-style: solid;*/
     /*border-color: grey;*/
-    /*display: flex;*/ /*To keep the size of the 
-    logo box similar to the cologo box. The problem is that
-    they will not behave responsible*/
 }
 
 .logoSpace {
@@ -92,8 +72,7 @@
 }
 
 
-/*NAVIGATION BAR CUSTOMIZED*/
-
+/*HEADER NAVIGATION BAR CUSTOMIZED*/
 .menuContainer {
     background-color: #15317E;
 }
@@ -165,7 +144,6 @@
     background-color: #000099;
 }
 
-
 /* mobile version */
 .navbar-default .navbar-toggle {
     border-color: white;
@@ -176,6 +154,15 @@
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
+}
+
+@media(max-width:992px){
+    /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 18px;
+        padding-right: 2px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -196,20 +183,44 @@
 }
 
 
-/*FOOTER*/ 
+/*FOOTER DETAILS*/ 
+.dictyFooter {
+    min-width:320px;
+    padding-bottom: 20px;
+
+    /*BACKGROUND COLOR*/
+    background: #000099;
+    background: linear-gradient(#000099, #0099FF); /* Standard syntax */
+    background: -webkit-linear-gradient(#000099, #0099FF); /*Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000099, #0099FF);  /*Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000099, #0099FF);  /*Firefox 3.6 to 15 */
+}
+
+.dictyFooter > .container {
+    max-width: 1000px;
+}
+
+.dictyFooter > .col-xs-12 > .footMenuSupport {
+    text-align: left;
+}
+
+.footPadding {
+    padding-right: 0px;
+}
 
 .footMenus {
     font: 14px helvetica,arial,sans-serif;
     color: #CCFFCC;
     padding-bottom: 1px;
     padding-top: 10px;
+    text-align: left;
 }
 
 .footMenuSupport {
     font: 14px arial,sans-serif;
     color: yellow;
     padding-top: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 .footLinks {
@@ -230,16 +241,7 @@ a:hover { color: white; text-decoration: underline;}
 @media(min-width:1200px){
 
 }
-@media(max-width:992px){
-    
-    /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
-    .navbar-default .navbar-nav > li > a {
-        color: white;
-        font-size: 18px;
-        padding-right: 2px;
-    }
 
-}
 @media(max-width:767px){
 
     .logoSpace {
@@ -253,12 +255,14 @@ a:hover { color: white; text-decoration: underline;}
         font: 12px arial, sans-serif;
         color: #D8D8D8;
         padding-top: 8px;
+        text-align: center;
     }
     .footMenus {
         font: 16px helvetica,arial,sans-serif;
         color: #CCFFCC;
         padding-bottom: 1px;
         padding-top: 30px;
+        text-align: center;
     }
 
     .footMenuSupport {
