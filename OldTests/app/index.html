@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" ng-app="dictyHeaderFooterApp">
+  <head>
+    <meta charset="utf-8">
+    <title>dicty-Angular: the Header and Footer</title>
+    <meta name="description" content="David AngularJS testing platform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+<body ng-controller="dictyHeaderFooterCtrl">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+  <dicty-header></dicty-header> 
+
+  <div class="theCenter">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 panelBlack">
+          <h1>Angular dictyBase</h1>
+          <em>Testing page for the header and footer</em>
+        </div>
+
+        <div class="col-sm-6 panelBlue"></div>
+        <div class="col-sm-6 panelGreen"></div>
+        <div class="col-sm-6 panelShiny">
+          <div>
+            <h3 class="visible-lg"> <strong>LARGEST</strong> screen screen size</h3>
+            <h5 class="visible-lg"> Large devices (<strong class="cimp">large desktops</strong>, 1200px and up) </h5>
+            <h3 class="visible-md cmedium"> <strong>MEDIUM</strong> screen screen size</h3>
+            <h5 class="visible-md"> Medium devices (<strong class="cimp">desktops</strong>, 992px and up) </h5>
+            <h3 class="visible-sm csmall"> <strong>SMALL</strong> screen size</h3>
+            <h5 class="visible-sm"> Small devices (<strong class="cimp">tablets</strong>, 768px and up) </h5>
+            <h3 class="visible-xs cextra"> <strong>EXTRA SMALL</strong> screen size</h3>
+            <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>         
+          </div>
+        </div>
+
+      </div> <!-- row -->
+    </div>
+  </div> <!-- <div class="theCenter"> -->
+
+  <p> the main menu length is {{sections.menus.length}} </p>
+  <dicty-footer></dicty-footer> 
+
+<!-- BUILDING ZONE -->
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script type="text/javascript" src="scripts/appDicty.module.js"></script>
+    <script type="text/javascript" src="scripts/controllers/dicty.HeaderFooter.controller.js"></script>
+    <script type="text/javascript" src="scripts/directives/dictyFooter.directive.js"></script>
+    <script type="text/javascript" src="scripts/directives/dictyHeader.directive.js"></script>
+    <script type="text/javascript" src="scripts/directives/dictyTesting.directive.js"></script>
+    <script type="text/javascript" src="scripts/services/dictyhf.factory.js"></script>   
+        <!-- endbuild -->
+</body>
+</html>

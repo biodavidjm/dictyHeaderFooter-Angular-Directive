@@ -1,4 +1,4 @@
-// Generated on 2014-10-08 using generator-angular 0.9.8
+// Generated on 2014-11-14 using generator-angular 0.9.8
 'use strict';
 
 // # Globbing
@@ -295,9 +295,6 @@ module.exports = function (grunt) {
     },
 
     // Copies remaining files to places other tasks can use
-    // DJM modified this line. I add the folder /templates 
-    // and delete .htaccess
-    // 
     copy: {
       dist: {
         files: [{

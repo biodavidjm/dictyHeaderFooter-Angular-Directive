@@ -1,5 +1,5 @@
 {
-  "name": "dynamic-footer",
+  "name": "dicty-header-footer-directive",
   "version": "0.0.1",
   "dependencies": {
     "angular": "~1.2.0",
@@ -17,5 +17,13 @@
     "angular-mocks": "~1.2.0",
     "angular-scenario": "~1.2.0"
   },
-  "appPath": "app"
+  "appPath": "app",
+  "main": "app/scripts/directives/appHeaderFooter.js",
+  "ignore": [
+    "app/index.html",
+    "app/styles/main.css",
+    "app/images/yeoman.png",
+    "app/views",
+    "app/scripts/app.js"
+  ]
 }
