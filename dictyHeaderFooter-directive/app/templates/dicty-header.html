@@ -1,4 +1,11 @@
 <!-- dicty-header.html -->
+
+<!-- Javascript code for the affix navigation bar effect -->
+<script type="text/javascript">
+	$('#nav').affix({});
+</script>
+
+<!-- The header -->
 <div class="dictyHeader">
     <div class="container">
     	<div class="row firstHeaderRow"> <!-- first row: Logo, Search boxes, static links -->
@@ -55,7 +62,7 @@
     </div>    <!-- class="container" -->
 
     <!-- NAVIGATION BAR -->
-    <div class="menuContainer" >
+    <div class="menuContainer" data-spy="affix"  data-offset-top="400" id="nav">
 	    <div class="container">
 	    	<div class="row"> <!-- Second row: navigation bar -->
 				<nav class="navbar navbar-default" role="navigation">

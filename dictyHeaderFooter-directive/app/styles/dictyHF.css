@@ -72,15 +72,30 @@
 }
 
 
+
 /*HEADER NAVIGATION BAR CUSTOMIZED*/
+
 .menuContainer {
     background-color: #15317E;
+    opacity: 0.9;
+    z-index: 10;
 }
+
+/*Fix the navigation bar when scrolling down*/
+/*First version*/
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height:50px;
+}
+
 
 /*CUSTOMIZE DEFAULT PARAMETERS*/
 /* navbar */
 .navbar-default {
     background-color: #15317E;
+    opacity: 0.9;
     border-style: none;
     margin:0px;
 }   
@@ -282,9 +297,11 @@ a:hover { color: white; text-decoration: underline;}
 /*TESTING TEXT. TO DELETE EVENTUALLY*/ 
 
 /*MAIN BODY*/
+
 .theCenter {
-    border: 10px;
-    border: 10px solid black;
+/*    border: 10px;
+    border: 10px solid black;*/
+    overflow: scroll;
 }
 .panelBlack {
     height: 300px;
