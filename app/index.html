@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" ng-app="dictyFooterApp">
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <title></title>
-    <title>dicty-Angular: the footer</title>
-    <meta name="description" content="David AngularJS testing platform">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -13,47 +13,53 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dictyHF.css">
     <!-- endbuild -->
   </head>
-<body ng-controller="dictyFooterCtrl">
+  <body ng-app="testApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <dicty-header></dicty-header>
+
     <!-- Add your site or application content here -->
-  <h1>Angular dictyBase: the Footer</h1>
-  <em>Testing page for a new dynamic version of the footer</em>
+    <div class="container">
 
-  <div class="theDirective">
-    <h3>Test: Angular DIRECTIVE of the FOOTER</h3>
-    <em>{{title}}</em>
-  </div>
+      <div ng-view=""></div>
+
+    </div>
+
+    <div class="theCenter">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-6 panelBlack">
+              <h1>Angular dictyBase</h1>
+              <em>Testing page for the header and footer</em>
+            </div>
+
+            <div class="col-sm-6 panelBlue"></div>
+            <div class="col-sm-6 panelGreen"></div>
+            <div class="col-sm-6 panelShiny">
+              <div>
+                <h3 class="visible-lg"> <strong>LARGEST</strong> screen screen size</h3>
+                <h5 class="visible-lg"> Large devices (<strong class="cimp">large desktops</strong>, 1200px and up) </h5>
+                <h3 class="visible-md cmedium"> <strong>MEDIUM</strong> screen screen size</h3>
+                <h5 class="visible-md"> Medium devices (<strong class="cimp">desktops</strong>, 992px and up) </h5>
+                <h3 class="visible-sm csmall"> <strong>SMALL</strong> screen size</h3>
+                <h5 class="visible-sm"> Small devices (<strong class="cimp">tablets</strong>, 768px and up) </h5>
+                <h3 class="visible-xs cextra"> <strong>EXTRA SMALL</strong> screen size</h3>
+                <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>         
+              </div>
+            </div>
+
+          </div> <!-- row -->
+        </div>
+    </div> <!-- <div class="theCenter"> -->
+
+
     <dicty-footer></dicty-footer>
-
-  <hr>
-  <div class="main">
-      <h3 class="visible-lg"> You are using the <strong>LARGEST</strong> screen size (we know it)! </h3>
-      <h5 class="visible-lg"> Large devices (<strong class="cimp">large desktops</strong>, 1200px and up) </h5>
-      <h3 class="visible-md cmedium"> Welcome to <strong>MEDIUM</strong> screen size (we know it)! </h3>
-      <h5 class="visible-md"> Medium devices (<strong class="cimp">desktops</strong>, 992px and up) </h5>
-      <h3 class="visible-sm csmall"> Switch to <strong>SMALL</strong> size (we know it)! </h3>
-      <h5 class="visible-sm"> Small devices (<strong class="cimp">tablets</strong>, 768px and up) </h5>
-      <h5 class="visible-sm"> The footer does not work perfectly in this screen size.<br/> The "Stock Center" does not follow the flow as expected. Do not panic, it will ;-)</h5>
-      <h3 class="visible-xs cextra"> <strong>EXTRA SMALL</strong> size (we know it)!</h3>
-      <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>
-  </div>
-  <hr>
-  <!-- Simple test to check that Angular is working -->
-  <h4> Quick Angular tests</h4
-  <p>1) 4 + 3 = {{4+3}}</p>
-  <p>2) Second test: The number of sections is {{sections.menus.length}} </p>
-
-    <first-directive> </first-directive>
-  
-  <hr>
-
-
-  <br/>
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -77,11 +83,10 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script type="text/javascript" src="scripts/appDicty.module.js"></script>
-  <script type="text/javascript" src="scripts/controllers/dicty.footer.controller.js"></script>
-  <script type="text/javascript" src="scripts/directives/dictyFooter.directive.js"></script>
-  <script type="text/javascript" src="scripts/directives/dictyTesting.directive.js"></script>
-
+        <script src="scripts/app.js"></script>
+        <script src="scripts/directives/appHeaderFooter.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
 </body>
 </html>

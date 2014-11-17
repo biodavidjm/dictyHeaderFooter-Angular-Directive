@@ -21,7 +21,7 @@
   "globals": {
     "after": false,
     "afterEach": false,
-    "angular": true,
+    "angular": false,
     "before": false,
     "beforeEach": false,
     "browser": false,
@@ -29,7 +29,7 @@
     "expect": false,
     "inject": false,
     "it": false,
-    "jasmine": true,
+    "jasmine": false,
     "spyOn": false
   }
 }

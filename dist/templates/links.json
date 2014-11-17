@@ -1,12 +1,21 @@
 [
     {
-        "main": "Genomes", 
-        
+        "main": "Genomes",         
         "submain": {
             "D. discoideum": "#",
             "D. fasciculatum": "#",
             "D. purpureum": "#",
             "P. pallidum": "#"
+        }
+    }, 
+    {
+        "main": "DictyAccess", 
+        "submain": {
+            "Genome Eye View": "#",
+            "Genomic statistics": "#",
+            "Annotations": "#",
+            "Ontology": "#",
+            "Phylogeny": "#"
         }
     }, 
     {
@@ -21,16 +30,6 @@
             "Textpresso": "#",
             "Biochemical Pathways": "#",
             "Third Party Tools": "#"
-        }
-    }, 
-    {
-        "main": "DictyAccess", 
-        "submain": {
-            "Genome Eye View": "#",
-            "Genomic statistics": "#",
-            "Annotations": "#",
-            "Ontology": "#",
-            "Phylogeny": "#"
         }
     }, 
     {
