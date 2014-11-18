@@ -13,14 +13,14 @@ angular
   .factory('dictyhfFactory', function ($http) {
     return {
       getJasonFile: function() {
-        return $http.get('templates/links.json');
+        return $http.get('dictyHFdirective/links.json');
       }
     };
   })
   .directive('dictyFooter', function() {
     return{
       restrict:'E',
-      templateUrl:'templates/dicty-footer.html',
+      templateUrl:'dictyHFdirective/dicty-footer.html',
       scope: true,
       controller: function(dictyhfFactory, $scope, $log) {
 
@@ -40,7 +40,7 @@ angular
   .directive('dictyHeader', function() {
     return{
       restrict:'E',
-      templateUrl:'templates/dicty-header.html',
+      templateUrl:'dictyHFdirective/dicty-header.html',
       scope: true,
       controller: function(dictyhfFactory, $scope, $log) {
 

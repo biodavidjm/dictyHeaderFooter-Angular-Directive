@@ -24,6 +24,7 @@
     "app/styles/main.css",
     "app/images/yeoman.png",
     "app/views",
-    "app/scripts/app.js"
+    "app/scripts/app.js",
+    "app/views/*"
   ]
 }
