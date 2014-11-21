@@ -309,7 +309,9 @@ module.exports = function (grunt) {
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
             'fonts/*',
-            'templates/*'
+            'templates/*',
+            //DJM
+            'scripts/dictyHFdirective/*'
           ]
         }, {
           expand: true,
