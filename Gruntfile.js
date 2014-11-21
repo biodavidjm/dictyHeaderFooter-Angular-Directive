@@ -311,7 +311,7 @@ module.exports = function (grunt) {
             'fonts/*',
             'templates/*',
             //DJM
-            'scripts/dictyHFdirective/*'
+            'scripts/dictyHF/*'
           ]
         }, {
           expand: true,
