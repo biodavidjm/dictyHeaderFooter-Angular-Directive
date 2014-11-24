@@ -59,6 +59,59 @@ body {
   margin-top: 28px;
 }
 
+/*TESTING TEXT. TO DELETE EVENTUALLY*/ 
+
+/*MAIN BODY*/
+
+.theCenter {
+/*    border: 10px;
+    border: 10px solid black;*/
+    overflow: scroll;
+}
+.panelBlack {
+    height: 300px;
+    background-color: #0041C2;
+    color: white;
+    border: 10px solid white;
+}
+.panelBlue {
+    height: 300px;
+    line-height: 200px;
+    background-color: #15317E;
+    color: white;
+    border: 10px solid white;
+    vertical-align: middle;
+}
+.panelGreen {
+    height: 300px;
+    background-color: #2B547E;
+    color: white;
+    border: 10px solid white;
+}
+.panelShiny {
+    height: 300px;
+    background-color: #1F45FC;
+    color: white;
+    border: 10px solid white;
+}
+
+
+
+/*Colors for screen sizes*/
+.cmedium {
+    color:green;
+}
+.csmall {
+    color:orange;
+}
+.cextra {
+    color:red;
+}
+.cimp{
+    /*color:#00CCCC;*/
+    text-shadow: 0px 0px 5px #FFFF66;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
