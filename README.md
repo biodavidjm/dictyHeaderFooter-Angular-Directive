@@ -25,7 +25,7 @@ The design principles behind the new framework of the dictyBase are described in
 
 ## Footer
 
-The `footer` html tag contains the dicty footer. A default bootstrap container is used, which 1) wrap site contents to a maximum of 1170px and 2) house the grid system. 
+The `footer` html tag contains the dicty footer. A default bootstrap container is used, which 1) wrap site contents to a maximum of 1170px, and 2) house the grid system. 
 
 ![FooterGridDesign](https://github.com/dictyBase/dictyHeaderFooter-Angular-Directive/blob/feature/includeEverythingInDirective/images/Footer_grid.jpg)
 
