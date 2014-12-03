@@ -1,6 +1,6 @@
 // Karma configuration
 // http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2014-11-14 using
+// Generated on 2014-10-08 using
 // generator-karma 0.8.3
 
 module.exports = function(config) {
@@ -50,7 +50,11 @@ module.exports = function(config) {
 
     // Which plugins to enable
     plugins: [
+      'karma-safari-launcher',
+      'karma-firefox-launcher',
+      'karma-chrome-launcher',
       'karma-phantomjs-launcher',
+      'karma-opera-launcher',
       'karma-jasmine'
     ],
 
