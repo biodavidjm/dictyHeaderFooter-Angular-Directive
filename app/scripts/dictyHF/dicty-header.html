@@ -1,10 +1,5 @@
 <!-- dicty-header.html -->
 
-<!-- Javascript code for the affix navigation bar effect -->
-<script type="text/javascript">
-	$('#nav').affix({});
-</script>
-
 <link rel="stylesheet" href="scripts/dictyHF/dictyHF.css">
 
 <!-- The header -->
@@ -12,35 +7,28 @@
     <div class="container">
     	<div class="row firstHeaderRow"> <!-- first row: Logo, Search boxes, static links -->
 			<div class="col-sm-2 col-xs-12 logoSpace" > <!-- The logo -->
-				<a ng-href="#">
+				<a ng-href="#/main">
 					<img src="scripts/dictyHF/dictyLogo.png" alt="dictyBase home" width=125>
 				</a>
 			</div>
 
 			<div class="col-sm-10 col-xs-12 cologoSpace"> <!-- Static links, search boxes -->
-				<div class="row linksSpace"> <!-- Static links -->
+
+ 				<div class="row linksSpace"> 
 					<a ng-href="#/download">
-						<button type="button" class="btn-link btn-sm">
-							<span class="glyphicon glyphicon-download"></span> Downloads
-						</button>
+						<span class="submenuFront"> <span class="glyphicon glyphicon-download"></span> Downloads </span>
 					</a>
 					<a ng-href="#/about"> 
-						<button type="button" class="btn-link btn-sm">
-							<span class="glyphicon glyphicon-info-sign"></span> About
-						</button>
+						<span class="submenuFront"><span class="glyphicon glyphicon-info-sign"></span> About </span>
 					</a>
 					<a ng-href="#/contact">
-						<button type="button" class="btn-link btn-sm">
-							<span class="glyphicon glyphicon-envelope"></span> Contact
-						</button>
+						<span class="submenuFront"><span class="glyphicon glyphicon-envelope"></span> Contact </span>
 					</a>
 					<a ng-href="#/login">
-						<button type="button" class="btn-link btn-sm">
-							<span class="glyphicon glyphicon-user"></span> Login
-						</button>
+						<span class="submenuFront"><span class="glyphicon glyphicon-user"></span> Login </span>
 					</a>
-				</div> <!-- Static links -->
-				
+				</div>
+
 				<!-- SEARCH BOXES -->
 				<div class="row searchBoxSpace">
 			        <div class="col-md-4 col-sm-6 pull-right">
