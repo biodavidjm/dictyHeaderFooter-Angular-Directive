@@ -27,6 +27,8 @@
 /*    border-style: solid;
     border-color: #00CCFF;*/
     vertical-align: bottom;
+    margin: 5px 0px 5px 0px;
+    padding-left: 50px;
 }
 
 .cologoSpace {
@@ -223,6 +225,11 @@
         padding-top: 5px;
         padding-bottom: 15px;
     }
+
+    .submenuFront {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }
 
 /*FOOTER DETAILS*/ 
@@ -284,6 +291,7 @@
 
     .logoSpace {
         padding-top: 10px;
+        padding-left: 0px;
         /*Same space from the top on mobile devices*/
     }
     .linksSpace {
