@@ -32,7 +32,7 @@ angular
                 $scope.sections.menus = data;
             })
             .error(function() {
-                $log.error('EEERRRRROOOOORRRR!!');
+                $log.error('EEERRRRROOOOORRRR parsing the link.json file!!! Take a look');
             });
       }
     };
@@ -46,17 +46,35 @@ angular
 
         $scope.title = 'Dynamic Header';
         $scope.sections = {};
-
         dictyhfFactory.getJasonFile()
             .success(function(data){
                 $scope.sections.menus = data;
             })
             .error(function() {
-                $log.error('EEERRRRROOOOORRRR!!');
+                $log.error('EEERRRRROOOOORRRR parsing the link.json file!!! Take a look!!');
             });
       }
     };
-
-  });
-
-  
+  })
+  .directive('definitionBar', function() {
+    return{
+      restrict:'EA',
+      templateUrl:'scripts/dictyHF/definition-bar.html',
+      scope: {
+        text: '@',
+        look: '@',
+        urlhome: '@',
+        urlmain: '@',
+        urlsub: '@',
+        desaparece: '@'
+      },
+      controller: function($scope) {
+        $scope.text = '';
+        $scope.look = '';
+        $scope.urlhome = '';
+        $scope.urlmain = '';
+        $scope.urlsub = '';
+        $scope.desaparece = '';
+      }
+    };
+  });  
